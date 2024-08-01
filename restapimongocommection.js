@@ -1,8 +1,7 @@
 const mongoose = require("mongoose");
 
 // MongoDB connection URL
-const uri =
-  "mongodb+srv://vandanrangani21:Kp5V8ZTrV2hwQOuZ@api.cvnyxj6.mongodb.net/?retryWrites=true&w=majority&appName=api";
+const uri = "mongodb://localhost:27017/olympics";
 
 // Connect to MongoDB
 mongoose
