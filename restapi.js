@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 require("./restapimongocommection"); // Ensure this connects to MongoDB
 const Menranking = require("./mongooseSchema");
