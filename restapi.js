@@ -1,6 +1,6 @@
 require("dotenv").config();
-const express = require("express");
 require("./restapimongocommection"); // Ensure this connects to MongoDB
+const express = require("express");
 const Menranking = require("./mongooseSchema");
 const app = express();
 
@@ -11,7 +11,7 @@ app.use(express.json());
 
 // Home route
 app.get("/", async (req, res) => {
-  const resul = await Menranking.find({});
+  const resul = await Menranking.find();
   // console.log(resul);
   res.send(resul);
 });
