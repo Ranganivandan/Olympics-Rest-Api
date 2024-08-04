@@ -11,7 +11,7 @@ app.use(express.json());
 // Home route
 app.get("/", async (req, res) => {
   const resul = await Menranking.find({});
-  console.log(resul);
+  // console.log(resul);
   res.send(resul);
 });
 
