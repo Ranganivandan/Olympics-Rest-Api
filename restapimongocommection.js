@@ -1,6 +1,7 @@
+require("dotenv").config();
 const mongoose = require("mongoose");
 
-const uri = "mongodb://localhost:27017/olympics";
+const uri = process.env.DB_URL;
 
 mongoose
   .connect(uri)
